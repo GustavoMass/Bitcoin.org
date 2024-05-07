@@ -6,6 +6,17 @@ on:
       - master
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Ensure Jest is executable
+        run: chmod +x ./node_modules/.bin/jest
+      - name: Run Jest tests
+        run: npx jest
+
   build:
     runs-on: ubuntu-latest
     steps:
