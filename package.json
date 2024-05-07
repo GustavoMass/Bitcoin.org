@@ -1,0 +1,21 @@
+{
+    "name": "bitcoin.org",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "npm start",
+      "test": "mocha",
+      "build": "webpack --mode production"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^7.0.5",
+      "lodash": "^4.17.21",
+      "dotenv": "^16.3.1",
+      "chalk": "^5.2.0", 
+      "axios": "^1.5.0",
+      "moment": "^2.29.4", 
+      "cors": "^2.8.5"
+    }
+  }
+  
